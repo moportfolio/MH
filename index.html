@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Muhammad Hassan</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-h+M3KD0HkT..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      /* small style for language pill */
+      #lang-switch { border-radius: 999px; padding: 6px 10px; font-weight:600; }
+      @media (max-width:991px){ #lang-switch{margin-left:12px;} }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only"><span data-lang="de">Lädt...</span><span data-lang="en">Loading...</span></span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="text-primary fw-bold m-0">Muhammad Hassan</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="#home" class="nav-item nav-link active"><span data-lang="de">Startseite</span><span data-lang="en">Home</span></a>
+                <a href="#about" class="nav-item nav-link"><span data-lang="de">Über mich</span><span data-lang="en">About me</span></a>
+                <a href="#cv" class="nav-item nav-link"><span data-lang="de">Mein Lebenslauf</span><span data-lang="en">My CV</span></a>
+            </div>
+            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+                <h1 class="text-primary fw-bold m-0">Muhammad Hassan</h1>
+            </a>
+            <div class="navbar-nav me-auto py-0">
+                <a href="#skill" class="nav-item nav-link"><span data-lang="de">Fähigkeiten</span><span data-lang="en">Skills</span></a>
+                <a href="#service" class="nav-item nav-link"><span data-lang="de">Dienstleistungen</span><span data-lang="en">Services</span></a>
+                <a href="#contact" class="nav-item nav-link"><span data-lang="de">Kontakt</span><span data-lang="en">Contact</span></a>
+            </div>
+
+
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Floating Language Switch (top right) -->
+    <button id="lang-switch" class="lang-floating-btn" aria-label="Switch language">
+      <span id="lang-de">🇩🇪 <strong>DE</strong></span>
+      <span id="lang-sep"> &nbsp;|&nbsp; </span>
+      <span id="lang-en">🇬🇧 <strong>EN</strong></span>
+    </button>
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-light my-6 mt-0" id="home">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
+                    <h3 class="text-primary mb-3"><span data-lang="de">Hallo, ich bin</span><span data-lang="en">Hello I'm</span></h3>
+                    <h1 class="display-3 mb-3">Muhammad Hassan</h1>
+                    <h2 class="typed-text-output d-inline"></h2>
+
+                    <!-- German typed strings -->
+                    <div class="typed-text typed-de d-none">
+                      Webdesigner, Webentwickler, Frontend-Entwickler, App-Designer, App-Entwickler, Fotograf
+                    </div>
+
+                    <!-- English typed strings -->
+                    <div class="typed-text typed-en d-none">
+                      Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer, Photographer
+                    </div>
+
+                    <div class="d-flex align-items-center pt-5">
+                        <a class="btn btn-primary py-3 px-5 mt-3"
+                           href="files/Muhammad_Hassan_CV.pdf"
+                           download="Muhammad_Hassan_CV.pdf">
+                            <span data-lang="de">Lebenslauf herunterladen</span>
+                            <span data-lang="en">Download CV</span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="img/profile.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-6" id="about">
+        <div class="container">
+
+            <!-- Section Title (added) -->
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0">
+                        <span data-lang="de">Über mich</span>
+                        <span data-lang="en">About me</span>
+                    </h1>
+                </div>
+            </div>
+
+            <div class="row g-5">
+                <!-- the rest of your About section continues normally -->
+
+
+                <!-- LEFT SIDE -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-5">
+                        <h3 class="lh-base mb-0"><span data-lang="de">Professionell in App-Entwicklung, Webentwicklung & moderner Programmierung</span><span data-lang="en">Professional in App Development, Web Development & Modern Programming</span></h3>
+                    </div>
+
+                    <p class="mb-4">
+                        <span data-lang="de">Ich bin Muhammad Hassan – ein leidenschaftlicher App-Entwickler mit Sitz in Tübingen, Deutschland. Ich spezialisiere mich auf Flutter (Dart) und Mobile Development und habe einen starken Hintergrund in Sprachen, Unterricht und Problemlösung.
+                        <br><br>
+                        Nach meinem Vollzeit-IT-Training in der App-Entwicklung an der App Akademie (Flutter, Programmiergrundlagen, UX/UI Design, App-Veröffentlichung) entwickle ich moderne, benutzerfreundliche Apps und verbessere kontinuierlich meine Programmierfähigkeiten.</span>
+
+                        <span data-lang="en">I'm Muhammad Hassan – a passionate app developer based in Tübingen, Germany. I specialize in Flutter (Dart) and mobile development, with a strong background in languages, teaching, and problem-solving.
+                        <br><br>
+                        After completing my full-time IT training in app development at App Akademie (Flutter, programming fundamentals, UX/UI design, publishing apps), I now build modern, user-friendly apps and continuously improve my coding skills.</span>
+                    </p>
+
+                    <div class="row align-items-center">
+
+                        <!-- Left Side Text -->
+                        <div class="col-md-6">
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i><span data-lang="de">Flutter- & Dart-Entwicklung</span><span data-lang="en">Flutter & Dart Development</span></p>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i><span data-lang="de">UX/UI-orientierte Denkweise</span><span data-lang="en">UX/UI Focused Mindset</span></p>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i><span data-lang="de">Starke Problemlösungsfähigkeiten</span><span data-lang="en">Strong Problem-Solving Skills</span></p>
+                            <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i><span data-lang="de">Praktisch & sehr organisiert</span><span data-lang="en">Hands-on & Very Organized</span></p>
+
+                            <a class="btn btn-primary py-3 px-5 mt-3" href="#contact"><span data-lang="de">Kontakt aufnehmen</span><span data-lang="en">Contact me</span></a>
+                        </div>
+
+                        <!-- Right Side Image -->
+                        <div class="col-md-6 text-center">
+                            <img src="img/shirt.png" class="img-fluid rounded" style="max-width:100%;" alt="Profilbild">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-12">
+                            <img class="img-fluid rounded w-100" src="img/desk.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <h5 class="border-end pe-3 me-3 mb-0"><span data-lang="de">Programmierfähigkeiten</span><span data-lang="en">Programming Skills</span></h5>
+                        <h2 class="text-primary fw-bold mb-0">Flutter · Dart · UI</h2>
+                    </div>
+
+                    <p class="mb-4">
+                        <span data-lang="de">IT-Ausbildung: Softwareprojekte, Flutter/Dart, UX/UI, App-Veröffentlichung<br>Sprachen: Arabisch, Deutsch, Englisch<br>Hintergrund: Englische Linguistik, Unterricht, Übersetzung & technische Arbeit</span>
+                        <span data-lang="en">IT Training: Software projects, Flutter/Dart, UX/UI, app publishing<br>Languages: Arabic, German, English<br>Background: English linguistics, teaching, translation & technical work</span>
+                    </p>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <h5 class="border-end pe-3 me-3 mb-0"><span data-lang="de">Persönliche Highlights</span><span data-lang="en">Personal Highlights</span></h5>
+                        <h2 class="text-primary fw-bold mb-0">Disziplin · Fokus</h2>
+                    </div>
+
+                    <p class="mb-0">
+                        <span data-lang="de">Ehemaliger Tischtennisprofi und Mitglied der ägyptischen Nationalmannschaft. Erfahrung in Teamarbeit, Disziplin und Leistung unter Druck — Fähigkeiten, die meine Arbeit als Entwickler stark unterstützen.</span>
+                        <span data-lang="en">Former table tennis professional and national team member of Egypt. Experienced in teamwork, discipline, and performance under pressure — skills that strongly support my work as a developer.</span>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CV Section Start -->
+    <section id="cv" class="container-xxl py-5">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0"><span data-lang="de">Mein Lebenslauf</span><span data-lang="en">My CV</span></h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <!-- optional button or leave empty -->
+                </div>
+            </div>
+
+            <div class="row g-5">
+                <!-- LEFT COLUMN -->
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                    <!-- Photo Placeholder -->
+                    <div class="text-center mb-4">
+                        <div style="width:200px; height:200px; border-radius:50%; overflow:hidden; margin:auto;">
+                            <img src="img/profile.jpeg" alt="Profile Photo" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <h2 class="mt-3">Muhammad Hassan</h2>
+                        <p class="text-muted"><span data-lang="de">Bachelor in Englischer Linguistik</span><span data-lang="en">Bachelor of English Linguistics</span></p>
+                    </div>
+
+                    <!-- CONTACT -->
+                    <h4 class="fw-bold mb-3"><span data-lang="de">Kontakt</span><span data-lang="en">Contact</span></h4>
+                    <p class="mb-1"><strong><span data-lang="de">Adresse:</span><span data-lang="en">Address:</span></strong><br>Paulinenstrasse 44, 72072 Tübingen, Germany</p>
+                    <p class="mb-1"><strong><span data-lang="de">E-Mail:</span><span data-lang="en">Email:</span></strong><br>muhannmmad@gmail.com</p>
+                    <p class="mb-3"><strong><span data-lang="de">Telefon:</span><span data-lang="en">Phone:</span></strong><br>+49 177 2718272</p>
+
+                    <hr>
+
+                    <!-- SKILLS -->
+                    <h4 class="fw-bold mb-3"><span data-lang="de">Fähigkeiten</span><span data-lang="en">Skills</span></h4>
+                    <ul class="list-unstyled">
+                        <li>• <span data-lang="de">Pädagogik</span><span data-lang="en">Pedagogy</span></li>
+                        <li>• <span data-lang="de">Didaktik</span><span data-lang="en">Didactics</span></li>
+                        <li>• <span data-lang="de">Unterricht</span><span data-lang="en">Teaching</span></li>
+                        <li>• <span data-lang="de">Grundkenntnisse IT</span><span data-lang="en">Basic IT Knowledge</span></li>
+                        <li>• <span data-lang="de">Hands-on-Mentalität</span><span data-lang="en">Hands-on Mentality</span></li>
+                        <li>• <span data-lang="de">Organisation</span><span data-lang="en">Organization</span></li>
+                    </ul>
+
+                    <hr>
+
+                    <!-- LANGUAGES -->
+                    <h4 class="fw-bold mb-3"><span data-lang="de">Sprachen</span><span data-lang="en">Languages</span></h4>
+                    <ul class="list-unstyled">
+                        <li>• Arabisch / Arabic</li>
+                        <li>• Deutsch / German</li>
+                        <li>• Englisch / English</li>
+                    </ul>
+
+                    <hr>
+
+                    <!-- FUN FACTS -->
+                    <h4 class="fw-bold mb-3"><span data-lang="de">Zusätzliche Informationen</span><span data-lang="en">Additional Info</span></h4>
+                    <p class="mb-1">• <span data-lang="de">Ehemaliger professioneller Tischtennisspieler</span><span data-lang="en">Former professional table tennis player</span></p>
+                    <p class="mb-1">• <span data-lang="de">Mitglied der ägyptischen Nationalmannschaft</span><span data-lang="en">Member of the Egyptian National Team</span></p>
+                    <p class="mb-1">• <span data-lang="de">Führerschein Klasse B</span><span data-lang="en">Driver’s License Class B</span></p>
+
+                    <hr>
+
+                    <!-- PORTFOLIO LINK -->
+                    <h4 class="fw-bold mb-3"><span data-lang="de">Portfolio</span><span data-lang="en">Portfolio</span></h4>
+                    <p><a href="https://muhammadhassan.eu/">muhammadhassan.eu</a></p>
+                </div>
+
+                <!-- RIGHT COLUMN -->
+                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.4s">
+                    <!-- PROFILE SUMMARY -->
+                    <h3 class="fw-bold mb-3"><span data-lang="de">Profilübersicht</span><span data-lang="en">Profile Summary</span></h3>
+                    <p><span data-lang="de">Muhammad Hassan (geboren am 19. Oktober 1975 in Ägypten, deutsche Staatsangehörigkeit) ist ein qualifizierter englischer Linguist mit umfangreicher Erfahrung als Lehrer, Übersetzer und Maschinenführer. Leidenschaftlich im Bereich Bildung, Sprachen, Technologie und App-Entwicklung.</span>
+                    <span data-lang="en">Muhammad Hassan (born 19 October 1975 in Egypt, German nationality) is a qualified English linguist with extensive experience as a teacher, translator, and machine operator. Passionate about education, languages, technology, and app development.</span></p>
+
+                    <hr>
+
+                    <!-- WORK EXPERIENCE -->
+                    <h3 class="fw-bold mb-3"><span data-lang="de">Berufserfahrung</span><span data-lang="en">Work Experience</span></h3>
+
+                    <h5 class="fw-bold"><span data-lang="de">Deutschland</span><span data-lang="en">Germany</span></h5>
+                    <ul>
+                        <li><strong>Courier &amp; Patient Transport – UDO GmbH</strong>, Tübingen (04/2021 – 04/2024)</li>
+                        <li><strong>Maschinen- &amp; Anlagenführer – Vöhringer GmbH</strong> (05/2018 – 12/2018)</li>
+                        <li><strong>Post- &amp; Paketbote – Deutsche Post</strong> (12/2017 – 03/2018)</li>
+                        <li><strong>Arabischlehrer – VHS Tübingen</strong> (02/2019 – 05/2019)</li>
+                    </ul>
+
+                    <h5 class="fw-bold mt-4"><span data-lang="de">Ägypten</span><span data-lang="en">Egypt</span></h5>
+                    <ul>
+                        <li><strong>Englischlehrer – Al-Azhar Institut, Banha</strong> (1999 – 2016)<br><span data-lang="de">Sekundarstufe (Alter 16–19)</span><span data-lang="en">Secondary level (ages 16–19)</span></li>
+                        <li><strong>Übersetzer – Oraby Übersetzungsbüro</strong> (1995 – 1999)<br><span data-lang="de">Arabisch–Englisch / Englisch–Arabisch</span><span data-lang="en">Arabic–English / English–Arabic</span></li>
+                    </ul>
+
+                    <hr>
+
+                    <!-- EDUCATION -->
+                    <h3 class="fw-bold mb-3"><span data-lang="de">Ausbildung</span><span data-lang="en">Education</span></h3>
+
+                    <h5 class="fw-bold"><span data-lang="de">Deutschland</span><span data-lang="en">Germany</span></h5>
+                    <ul>
+                        <li><strong>Ausbildung zum Maschinen- &amp; Anlagenführer</strong><br>GIBA Rottenburg (09/2019 – 02/2021)</li>
+                        <li><strong>Vollzeit-IT-Training – App-Entwicklung</strong><br>App Akademie GmbH (05/2024 – <span data-lang="de">Heute</span><span data-lang="en">Present</span>)<br><span data-lang="de">Flutter/Dart, UI/UX, Programmierung, App-Veröffentlichung</span><span data-lang="en">Flutter/Dart, UI/UX, Programming, App Publishing</span></li>
+                    </ul>
+
+                    <h5 class="fw-bold mt-4"><span data-lang="de">Ägypten</span><span data-lang="en">Egypt</span></h5>
+                    <ul>
+                        <li><strong>Bachelorstudium – Englische Linguistik</strong><br>Banha University, Faculty of Arts (1993 – 1997)</li>
+                        <li><strong>Studium Englische Literatur</strong><br>Al-Azhar University, Cairo (2012 – 2013)</li>
+                    </ul>
+
+                    <hr>
+
+                    <!-- SPORTS -->
+                    <h3 class="fw-bold mb-3"><span data-lang="de">Sport &amp; Erfolge</span><span data-lang="en">Sports & Achievements</span></h3>
+                    <p>• <span data-lang="de">Tischtennis – Mitglied der ägyptischen Nationalmannschaft</span><span data-lang="en">Table Tennis – Member of the Egyptian National Team</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CV Section End -->
+
+    <!-- Expertise Start -->
+    <div class="container-xxl py-6 pb-5" id="skill">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- LEFT SIDE -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+
+                    <h1 class="display-5 mb-5"><span data-lang="de">Fähigkeiten & Erfahrung</span><span data-lang="en">Skills & Experience</span></h1>
+
+                    <p class="mb-4">
+                        <span data-lang="de">Ich konzentriere mich darauf, moderne und benutzerfreundliche Anwendungen mit Flutter zu entwickeln und dabei klare UI/UX-Prinzipien einzuhalten. Unten finden Sie einen kurzen Überblick über die Technologien und Tools, die ich in meinem Entwicklungsworkflow verwende.</span>
+                        <span data-lang="en">I focus on building modern, user-friendly applications with Flutter and maintaining clean UI/UX principles. Below is a quick overview of the technologies and tools I use in my development workflow.</span>
+                    </p>
+
+                    <h3 class="mb-4"><span data-lang="de">Meine Fähigkeiten</span><span data-lang="en">My Skills</span></h3>
+
+                    <div class="row align-items-center">
+
+                        <!-- Left Column Skills -->
+                        <div class="col-md-6">
+
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Flutter</h6>
+                                    <h6 class="font-weight-bold">100%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" aria-valuenow="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Figma</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" aria-valuenow="90"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">HTML</h6>
+                                    <h6 class="font-weight-bold">100%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" aria-valuenow="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">CSS</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" aria-valuenow="90"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Right Column Skills -->
+                        <div class="col-md-6">
+
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">PHP</h6>
+                                    <h6 class="font-weight-bold">80%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" aria-valuenow="80"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">WordPress / CMS</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" aria-valuenow="90"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">JavaScript</h6>
+                                    <h6 class="font-weight-bold">75%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-dark" aria-valuenow="75"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Photoshop</h6>
+                                    <h6 class="font-weight-bold">55%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-secondary" aria-valuenow="55"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE (Experience & Education) -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+
+                    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
+                        <li class="nav-item w-50">
+                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1"><span data-lang="de">Erfahrung</span><span data-lang="en">Experience</span></button>
+                        </li>
+                        <li class="nav-item w-50">
+                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2"><span data-lang="de">Ausbildung</span><span data-lang="en">Education</span></button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+
+                        <!-- Experience -->
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row gy-5 gx-4">
+
+                                <div class="col-sm-6">
+                                    <h5><span data-lang="de">Flutter Entwickler</span><span data-lang="en">Flutter Developer</span></h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2024 - <span data-lang="de">Heute</span><span data-lang="en">Present</span></p>
+                                    <h6 class="mb-0">App Akademie Projekte / App Akademie Projects</h6>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <h5><span data-lang="de">Übersetzer &amp; Linguistik</span><span data-lang="en">Translator & Linguistics</span></h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">1995 - 2016</p>
+                                    <h6 class="mb-0">Ägypten &amp; Deutschland / Egypt &amp; Germany</h6>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <h5><span data-lang="de">Unterricht &amp; Coaching</span><span data-lang="en">Teaching & Coaching</span></h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">1999 - 2016</p>
+                                    <h6 class="mb-0">Al-Azhar Institut / Al-Azhar Institute</h6>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <h5><span data-lang="de">Technischer Mitarbeiter</span><span data-lang="en">Technical Worker</span></h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2017 - 2024</p>
+                                    <h6 class="mb-0">Verschiedene Firmen, Deutschland / Various Companies, Germany</h6>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Education -->
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row gy-5 gx-4">
+
+                                <div class="col-sm-6">
+                                    <h5><span data-lang="de">Flutter &amp; App-Entwicklung</span><span data-lang="en">Flutter & App Development</span></h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2024 - 2025</p>
+                                    <h6 class="mb-0">App Akademie, Deutschland / App Akademie, Germany</h6>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <h5><span data-lang="de">Bachelor in Englischer Linguistik</span><span data-lang="en">Bachelor of English Linguistics</span></h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">1993 - 1997</p>
+                                    <h6 class="mb-0">Banha University, Ägypten / Banha University, Egypt</h6>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <h5><span data-lang="de">Lehramt &amp; Bildungsstudien</span><span data-lang="en">Teaching & Education Studies</span></h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2012 - 2013</p>
+                                    <h6 class="mb-0">Al-Azhar Universität, Kairo / Al-Azhar University, Cairo</h6>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <h5><span data-lang="de">Sprach- &amp; Übersetzungsarbeit</span><span data-lang="en">Language & Translation Work</span></h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">1995 - 1999</p>
+                                    <h6 class="mb-0">Oraby Übersetzungsbüro / Oraby Translation Office</h6>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Expertise End -->
+
+    <!-- SERVICES SECTION (BILINGUAL) -->
+    <section id="service" class="container-fluid bg-light my-5 py-6">
+      <div class="container">
+        <div class="row g-5 mb-5">
+          <div class="col-lg-6">
+            <h1>
+              <span data-lang="de">Meine Dienstleistungen</span>
+              <span data-lang="en">My Services</span>
+            </h1>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <a class="btn btn-primary py-3 px-5" href="#contact">
+              <span data-lang="de">Mich engagieren</span>
+              <span data-lang="en">Hire Me</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-6">
+              <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5"
+                   onclick="location.href='#contact'"
+                   style="cursor: pointer;">
+                <div class="bg-icon flex-shrink-0 mb-3">
+                  <i class="fa fa-laptop-code fa-2x text-dark"></i>
+                </div>
+                <div class="ms-sm-4 text-dark">
+                  <h4>
+                    <span data-lang="de">Individuelle Website-Entwicklung</span>
+                    <span data-lang="en">Custom Website Design & Development</span>
+                  </h4>
+                  <p>
+                    <span data-lang="de">Moderne, schnelle, responsive Websites…</span>
+                    <span data-lang="en">Modern, responsive, SEO-friendly websites…</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          <!-- Service 2 -->
+          <div class="col-lg-6">
+            <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5" onclick="location.href='#contact'"
+                style="cursor: pointer;">
+              <div class="bg-icon flex-shrink-0 mb-3"><i class="fa fa-mobile-alt fa-2x text-dark"></i></div>
+              <div class="ms-sm-4 text-dark">
+                <h4>
+                  <span data-lang="de">Mobile App Entwicklung (iOS & Android)</span>
+                  <span data-lang="en">Mobile App Development (iOS & Android)</span>
+                </h4>
+                <p>
+                  <span data-lang="de">Schöne, schnelle Flutter-Apps mit Datenbank, APIs, Maps und mehr.</span>
+                  <span data-lang="en">Fast, beautiful Flutter apps with database, maps, notifications, APIs & more.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="col-lg-6">
+            <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5" onclick="location.href='#contact'"
+                style="cursor: pointer;">
+              <div class="bg-icon flex-shrink-0 mb-3"><i class="fa fa-palette fa-2x text-dark"></i></div>
+              <div class="ms-sm-4 text-dark">
+                <h4>
+                  <span data-lang="de">UI/UX Design</span>
+                  <span data-lang="en">UI/UX Design</span>
+                </h4>
+                <p>
+                  <span data-lang="de">Moderne Figma-Designs, Prototypen, Wireframes und komplette UI-Kits.</span>
+                  <span data-lang="en">Modern Figma designs: wireframes, prototypes, screen flows and full UI kits.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="col-lg-6">
+            <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5" onclick="location.href='#contact'"
+                style="cursor: pointer;">
+              <div class="bg-icon flex-shrink-0 mb-3"><i class="fa fa-pen-nib fa-2x text-dark"></i></div>
+              <div class="ms-sm-4 text-dark">
+                <h4>
+                  <span data-lang="de">Logo & Brand Identity</span>
+                  <span data-lang="en">Logo Design & Brand Identity</span>
+                </h4>
+                <p>
+                  <span data-lang="de">Klar erkennbare Logos, Farbschemata, Typografie und Branding-Guidelines.</span>
+                  <span data-lang="en">Clean, memorable logos with branding kits, colors, typography & guidelines.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="col-lg-6">
+            <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5" onclick="location.href='#contact'"
+                style="cursor: pointer;">
+              <div class="bg-icon flex-shrink-0 mb-3"><i class="fa fa-file-alt fa-2x text-dark"></i></div>
+              <div class="ms-sm-4 text-dark">
+                <h4>
+                  <span data-lang="de">Lebenslauf / CV Design</span>
+                  <span data-lang="en">CV / Resume Design</span>
+                </h4>
+                <p>
+                  <span data-lang="de">Modernes, ATS-freundliches CV-Design + Optimierung.</span>
+                  <span data-lang="en">ATS-friendly, modern resume design + content optimization.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="col-lg-6">
+            <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5" onclick="location.href='#contact'"
+                style="cursor: pointer;">
+              <div class="bg-icon flex-shrink-0 mb-3"><i class="fa fa-chart-line fa-2x text-dark"></i></div>
+              <div class="ms-sm-4 text-dark">
+                <h4>
+                  <span data-lang="de">Präsentationsdesign</span>
+                  <span data-lang="en">Presentation Design</span>
+                </h4>
+                <p>
+                  <span data-lang="de">Professionelle Präsentationen für Business, Pitching und Social Media.</span>
+                  <span data-lang="en">Beautiful PowerPoint, Google Slides & Canva presentations.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact Start -->
+    <div class="container-xxl pb-5" id="contact">
+        <div class="container py-5">
+            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-6">
+                    <h1 class="display-5 mb-0"><span data-lang="de">Lassen Sie uns zusammenarbeiten</span><span data-lang="en">Let's Work Together</span></h1>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a class="btn btn-primary py-3 px-5" href="#contact-form"><span data-lang="de">Sag Hallo</span><span data-lang="en">Say Hello</span></a>
+                </div>
+            </div>
+            <div class="row g-5">
+                <!-- Contact Info -->
+                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="mb-2"><span data-lang="de">Mein Büro:</span><span data-lang="en">My office:</span></p>
+                    <h3 class="fw-bold">
+                        <a href="https://www.google.com/maps?q=Paulinenstr.+44,+72072+T%C3%BCbingen,+Germany" target="_blank" style="color:#0d6efd; text-decoration:none;">Paulinenstr.44 72072 Tübingen Germany</a>
+                    </h3>
+                    <hr class="w-100">
+
+                    <p class="mb-2"><span data-lang="de">Rufen Sie mich an oder WhatsApp:</span><span data-lang="en">Call or Whatsapp me:</span></p>
+                    <h3 class="fw-bold">
+                        <a href="tel:+491772718272" style="color:#0d6efd; text-decoration:none;">+49 177 2718272</a>
+                        <a href="https://wa.me/491772718272" target="_blank" style="margin-left:12px;"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:60px; height:60px;"></a>
+                    </h3>
+                    <hr class="w-100">
+
+                    <p class="mb-2"><span data-lang="de">Schreiben Sie mir eine E-Mail:</span><span data-lang="en">Mail me:</span></p>
+                    <h3 class="fw-bold"><a href="mailto:info@muhammadhassan.eu" style="color:#0d6efd; text-decoration:none;">info@muhammadhassan.eu</a></h3>
+                    <hr class="w-100">
+
+                    <p class="mb-2"><span data-lang="de">Folgen Sie mir:</span><span data-lang="en">Follow me:</span></p>
+
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/mohammad.fetouh" target="_blank" style="width:50px; height:50px; font-size:32px; display:flex; align-items:center; justify-content:center;"><i class="bi bi-facebook"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://www.instagram.com/muhammad.fetouh/" target="_blank" style="width:50px; height:50px; font-size:32px; display:flex; align-items:center; justify-content:center;"><i class="bi bi-instagram"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://www.tiktok.com/@muhammnnad?_t=ZN-8wv1uQvUD4A&_r=1" target="_blank" style="width:50px; height:50px; font-size:32px; display:flex; align-items:center; justify-content:center;"><i class="fab fa-tiktok"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/muhammad-hassan-84a700348/" target="_blank" style="width:50px; height:50px; font-size:32px; display:flex; align-items:center; justify-content:center;"><i class="bi bi-linkedin"></i></a>
+                    </div>
+
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <p class="mb-4"><span data-lang="de">Senden Sie mir gerne eine Nachricht über das folgende Formular.</span><span data-lang="en">Feel free to send me a message using the form below.</span></p>
+
+                    <form id="contact-form" action="https://formspree.io/f/xdkgvodv" method="POST" novalidate>
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" name="name" id="name-field" placeholder="Your Name">
+                                    <label for="name-field"><span data-lang="de">Ihr Name</span><span data-lang="en">Your Name</span></label>
+                                </div>
+                                <div class="invalid-feedback"><span data-lang="de">Bitte geben Sie Ihren Namen ein.</span><span data-lang="en">Please write your name.</span></div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" name="telephone" id="telephone-field" placeholder="Your Telephone Number">
+                                    <label for="telephone-field"><span data-lang="de">Ihre Telefonnummer</span><span data-lang="en">Your Telephone Number</span></label>
+                                </div>
+                                <div class="invalid-feedback"><span data-lang="de">Bitte geben Sie Ihre Telefonnummer ein.</span><span data-lang="en">Please write your telephone number.</span></div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" name="email" id="email-field" placeholder="Your Email">
+                                    <label for="email-field"><span data-lang="de">Ihre E-Mail</span><span data-lang="en">Your Email</span></label>
+                                </div>
+                                <div class="invalid-feedback"><span data-lang="de">Bitte geben Sie Ihre E-Mail ein.</span><span data-lang="en">Please write your email.</span></div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" name="subject" id="subject-field" placeholder="Subject">
+                                    <label for="subject-field"><span data-lang="de">Betreff</span><span data-lang="en">Subject</span></label>
+                                </div>
+                                <div class="invalid-feedback"><span data-lang="de">Bitte geben Sie einen Betreff ein.</span><span data-lang="en">Please write a subject.</span></div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" name="message" id="message-field" placeholder="Leave a message here" style="height: 100px"></textarea>
+                                    <label for="message-field"><span data-lang="de">Nachricht</span><span data-lang="en">Message</span></label>
+                                </div>
+                                <div class="invalid-feedback"><span data-lang="de">Bitte geben Sie Ihre Nachricht ein.</span><span data-lang="en">Please write your message.</span></div>
+                            </div>
+
+                            <input type="hidden" name="_captcha" value="false" />
+
+                            <div class="col-12">
+                                <button class="btn btn-primary py-3 px-5" type="submit"><span data-lang="de">Nachricht senden</span><span data-lang="en">Send Message</span></button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div id="thank-you-message" class="text-center mt-4" style="display:none;">
+                        <h4 class="text-success"><span data-lang="de">Danke! Ihre Nachricht wurde gesendet.</span><span data-lang="en">Thank you! Your message has been sent.</span></h4>
+                        <a href="#" class="text-primary" onclick="resetForm(event)">← <span data-lang="de">Senden Sie eine weitere Nachricht</span><span data-lang="en">Send another message</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Updated Map -->
+    <div class="container-xxl pt-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container-xxl pt-5 px-0">
+            <div class="bg-dark">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.431942901909!2d9.044742115721892!3d48.52113297925308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799f4dfd6b6b28b%3A0x2cd1f5c7ec4c0c53!2sPaulinenstra%C3%9Fe%2044%2C%2072072%20T%C3%BCbingen%2C%20Germany!5e0!3m2!1sen!2sde!4v1716277240573!5m2!1sen!2sde"
+                  frameborder="0" style="width: 100%; height: 450px; border:0;" allowfullscreen aria-hidden="false"
+                  tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Validation + Language Script -->
+    <script>
+      // Language logic
+      let currentLang = localStorage.getItem('lang') || 'de';
+      const langButton = document.getElementById('lang-switch');
+
+      function updateLanguage() {
+        document.querySelectorAll('[data-lang]').forEach(el=>{
+          el.style.display = el.getAttribute('data-lang') === currentLang ? '' : 'none';
+        });
+        // Update button highlight
+        if(currentLang === 'de'){
+          document.getElementById('lang-de').style.opacity = '1';
+          document.getElementById('lang-en').style.opacity = '0.6';
+        } else {
+          document.getElementById('lang-de').style.opacity = '0.6';
+          document.getElementById('lang-en').style.opacity = '1';
+        }
+      }
+
+      langButton.addEventListener('click', ()=>{
+        currentLang = currentLang === 'de' ? 'en' : 'de';
+        localStorage.setItem('lang', currentLang);
+        updateLanguage();
+      });
+
+      updateLanguage();
+
+      // Form validation with bilingual feedback handling
+      const form = document.getElementById('contact-form');
+      const thankYou = document.getElementById('thank-you-message');
+      thankYou.style.display = 'none';
+
+      function setInvalid(el, messages){
+        el.classList.add('is-invalid');
+        // find sibling invalid-feedback and update its spans (if present)
+        const fb = el.parentElement.nextElementSibling;
+        if(fb && fb.classList && fb.classList.contains('invalid-feedback')){
+          const deSpan = fb.querySelector('[data-lang="de"]');
+          const enSpan = fb.querySelector('[data-lang="en"]');
+          if(deSpan) deSpan.textContent = messages.de;
+          if(enSpan) enSpan.textContent = messages.en;
+        }
+      }
+
+      form.addEventListener('submit', async function(e){
+        e.preventDefault();
+        form.querySelectorAll('.form-control').forEach(input => input.classList.remove('is-invalid'));
+        let isValid = true;
+
+        const name = document.getElementById('name-field');
+        const telephone = document.getElementById('telephone-field');
+        const email = document.getElementById('email-field');
+        const subject = document.getElementById('subject-field');
+        const message = document.getElementById('message-field');
+
+        const phonePattern = /^[0-9+\-\s()]{6,20}$/;
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if(name.value.trim() === ''){ setInvalid(name, {de:'Bitte geben Sie Ihren Namen ein.', en:'Please write your name.'}); isValid=false; }
+
+        if(telephone.value.trim() === ''){ setInvalid(telephone, {de:'Bitte geben Sie Ihre Telefonnummer ein.', en:'Please write your telephone number.'}); isValid=false; }
+        else if(!phonePattern.test(telephone.value.trim())){ setInvalid(telephone, {de:'Bitte geben Sie eine gültige Telefonnummer ein.', en:'Please enter a valid telephone number.'}); isValid=false; }
+
+        if(email.value.trim() === ''){ setInvalid(email, {de:'Bitte geben Sie Ihre E-Mail ein.', en:'Please write your email.'}); isValid=false; }
+        else if(!emailPattern.test(email.value.trim())){ setInvalid(email, {de:'Bitte geben Sie eine gültige E-Mail-Adresse ein.', en:'Please enter a valid email address.'}); isValid=false; }
+
+        if(subject.value.trim() === ''){ setInvalid(subject, {de:'Bitte geben Sie einen Betreff ein.', en:'Please write a subject.'}); isValid=false; }
+        if(message.value.trim() === ''){ setInvalid(message, {de:'Bitte geben Sie Ihre Nachricht ein.', en:'Please write your message.'}); isValid=false; }
+
+        if(!isValid) return;
+
+        try{
+          const data = new FormData(form);
+          const response = await fetch(form.action, { method: form.method, body: data, headers:{Accept:'application/json'} });
+          if(response.ok){ form.reset(); form.style.display='none'; thankYou.style.display='block'; }
+          else { alert(currentLang==='de'? 'Ups! Etwas ist schiefgegangen. Bitte versuchen Sie es erneut.' : 'Oops! Something went wrong. Please try again.'); }
+        } catch(err){ alert(currentLang==='de'? 'Verbindungsfehler. Bitte prüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.' : 'Connection error. Please check your internet and try again.'); }
+
+      });
+
+      function resetForm(event){ event.preventDefault(); thankYou.style.display='none'; form.style.display='block'; }
+
+      // Optional: initialize typed.js with translated strings if typed lib loaded
+      document.addEventListener('DOMContentLoaded', ()=>{
+        const typedEl = document.querySelector('.typed-text');
+        const output = document.querySelector('.typed-text-output');
+        if(typedEl && output && typeof Typed !== 'undefined'){
+          // gather the active language texts from .typed-text
+          const texts = [];
+          typedEl.querySelectorAll('[data-lang]').forEach(span=>{ if(span.getAttribute('data-lang')===currentLang) texts.push(span.textContent); });
+          new Typed(output, { strings: texts, typeSpeed: 80, backSpeed: 40, backDelay: 2000, loop: true });
+        }
+      });
+    </script>
+
+    <!-- Impressum & Copyright -->
+    <div class="container-fluid bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="small mb-2">
+                <a href="impressum.html" class="text-secondary border-bottom"><span data-lang="de">Impressum</span><span data-lang="en">Legal Notice</span></a> |
+                <a href="datenschutz.html" class="text-secondary border-bottom"><span data-lang="de">Datenschutz</span><span data-lang="en">Privacy Policy</span></a>
+            </p>
+            <p class="mb-0">&copy; 2025 Muhammad Hassan. <span data-lang="de">Alle Rechte vorbehalten.</span><span data-lang="en">All rights reserved.</span></p>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

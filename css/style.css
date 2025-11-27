@@ -344,8 +344,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    background: #f1f1f1; /* simple solid background */
+    background: url(../img/bg-icon.png) center center no-repeat;
+    background-size: cover;
 }
 
 

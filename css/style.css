@@ -78,6 +78,16 @@ html {
         background-color: #f7f7f7 !important;
     }
 }
+@media (prefers-color-scheme: dark) {
+    .service-item {
+        background-color: #ffffff !important;
+        border-color: #ddd !important;
+    }
+
+    .bg-icon {
+        background: none !important;
+    }
+}
 
 
 /*** Spinner ***/

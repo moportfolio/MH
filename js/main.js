@@ -57,7 +57,22 @@
          if (typed) typed.destroy();
 
          const selector = lang === "de" ? ".typed-de" : ".typed-en";
-         const words = document.querySelector(selector).textContent.trim().split(", ");
+         const element = document.querySelector(selector);
+
+         // --- SAFETY CHECKS ---
+         if (!element) {
+             console.warn("Typed.js element missing:", selector);
+             return;
+         }
+
+         const output = document.querySelector(".typed-text-output");
+         if (!output) {
+             console.warn("Typed output element missing!");
+             return;
+         }
+         // ----------------------
+
+         const words = element.textContent.trim().split(", ");
 
          typed = new Typed(".typed-text-output", {
              strings: words,

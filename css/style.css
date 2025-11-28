@@ -23,17 +23,15 @@
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
+
 .lang-floating-btn {
   position: fixed;
   top: 15px;
   right: 15px;
   z-index: 9999;
-
-  /* Use Bootstrap primary colors */
   background: var(--bs-body-bg);
   color: var(--bs-primary);
   border: 1px solid var(--bs-primary);
-
   padding: 8px 14px;
   border-radius: 8px;
   cursor: pointer;
@@ -46,49 +44,21 @@
 html {
   scroll-behavior: smooth;
 }
-/* language switch visual state */
+
 .lang-floating-btn {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 10px;
 }
 
-/* active language pill */
 .lang-floating-btn .lang-active {
     font-weight: 700;
     opacity: 1;
-  }
+}
 
-/* inactive language looks like plain text */
 .lang-floating-btn .lang-inactive {
     opacity: 0.4;
-  }
-
-/* Disable dark-mode styling completely */
-@media (prefers-color-scheme: dark) {
-    body, .service-item, .bg-icon {
-        background: none !important;
-        background-color: #ffffff !important;
-        color: #000000 !important;
-        border-color: rgba(0,0,0,0.1) !important;
-    }
-
-    .service-item:hover {
-        background-color: #f7f7f7 !important;
-    }
 }
-@media (prefers-color-scheme: dark) {
-    .service-item {
-        background-color: #ffffff !important;
-        border-color: #ddd !important;
-    }
-
-    .bg-icon {
-        background: none !important;
-    }
-}
-
 
 /*** Spinner ***/
 #spinner {
@@ -104,57 +74,67 @@ html {
     opacity: 1;
 }
 
-
-/* Service Card Styling */
+/*** Service Card Styling ***/
 .service-item {
     transition: all 0.35s ease;
     border: 1px solid rgba(0, 0, 0, 0.05);
     cursor: pointer;
+    background: #ffffff;
 }
 
 /* Hover Animation */
 .service-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-    background: #ffffff !important;
+    background: #ffffff;
 }
 
-/* Smooth Icon Circle */
-.bg-icon {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background: #f1f1f1;
+/*** FIXED SERVICE ICON DARK MODE PROBLEM ***/
+/* Always force icon background to remain bright */
+.service-item .bg-icon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    
+    /* fix darkness caused by dark-mode browsers */
+    background: none !important;
+    filter: none !important;
+    mix-blend-mode: normal !important;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s ease;
 }
 
-/* Icon Hover Animation */
-.service-item:hover .bg-icon i {
-    transform: scale(1.25) rotate(5deg);
+.bg-icon-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+    /* force no dark-mode dimming */
+    filter: none !important;
+    mix-blend-mode: normal !important;
 }
 
 .bg-icon i {
     transition: all 0.3s ease;
 }
 
-/* Dark Mode Compatibility */
-@media (prefers-color-scheme: dark) {
-    .service-item {
-        background: #1e1e1e !important;
-        border: 1px solid #333 !important;
-    }
-    .service-item:hover {
-        background: #2a2a2a !important;
-        box-shadow: 0 15px 35px rgba(255, 255, 255, 0.1);
-    }
-    .bg-icon {
-        background: #333 !important;
-    }
+.service-item:hover .bg-icon i {
+    transform: scale(1.25) rotate(5deg);
 }
 
+/*** REMOVE ONLY THE DARK-MODE OVERRIDES THAT BROKE YOUR ICONS ***/
+@media (prefers-color-scheme: dark) {
+    .service-item {
+        background: #ffffff !important;
+        border-color: #ddd !important;
+    }
+    .bg-icon {
+        background: none !important;
+    }
+}
 
 /*** Button ***/
 .btn {
@@ -192,7 +172,6 @@ html {
     font-weight: normal;
 }
 
-
 /*** Navbar ***/
 .navbar.fixed-top {
     display: none;
@@ -218,7 +197,6 @@ html {
     }
 }
 
-
 /*** Header ***/
 #home {
     margin-bottom: 6rem;
@@ -230,99 +208,6 @@ html {
     color: var(--dark);
 }
 
-.btn-play {
-    position: relative;
-    display: block;
-    box-sizing: content-box;
-    width: 16px;
-    height: 26px;
-    border-radius: 100%;
-    border: none;
-    outline: none !important;
-    padding: 18px 20px 20px 28px;
-    background: var(--primary);
-}
-
-.btn-play:before {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    display: block;
-    width: 60px;
-    height: 60px;
-    background: var(--primary);
-    border-radius: 100%;
-    animation: pulse-border 1500ms ease-out infinite;
-}
-
-.btn-play:after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    display: block;
-    width: 60px;
-    height: 60px;
-    background: #FFFFFF;
-    border-radius: 100%;
-    transition: all 200ms;
-}
-
-.btn-play span {
-    display: block;
-    position: relative;
-    z-index: 3;
-    width: 0;
-    height: 0;
-    left: -1px;
-    border-left: 16px solid var(--primary);
-    border-top: 11px solid transparent;
-    border-bottom: 11px solid transparent;
-}
-
-@keyframes pulse-border {
-    0% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
-        opacity: 0;
-    }
-}
-
-.modal-video .modal-dialog {
-    position: relative;
-    max-width: 800px;
-    margin: 60px auto 0 auto;
-}
-
-.modal-video .modal-body {
-    position: relative;
-    padding: 0px;
-}
-
-.modal-video .close {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    right: 0px;
-    top: -30px;
-    z-index: 999;
-    font-size: 30px;
-    font-weight: normal;
-    color: #FFFFFF;
-    background: #000000;
-    opacity: 1;
-}
-
-
 /*** About ***/
 #about .years .display-1 {
     font-size: 10rem;
@@ -333,7 +218,6 @@ html {
     letter-spacing: 30px;
     margin-right: -30px;
 }
-
 
 /*** Skills ***/
 #skill .progress {
@@ -357,30 +241,6 @@ html {
 
 #skill .tab-content hr {
     width: 30px;
-}
-
-
-/*** Service ***/
-.service-item .bg-icon {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    background: none !important; /* remove dark circle */
-}
-
-.bg-icon-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-
-.bg-icon-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
 }
 
 /*** Project Portfolio ***/
@@ -424,7 +284,6 @@ html {
     padding-bottom: 30px !important;
 }
 
-
 /*** Team ***/
 .team-item img {
     transition: .5s;
@@ -458,20 +317,3 @@ html {
 .team-item:hover .team-text div {
     margin-left: 30px;
 }
-/* FORCE FULL LIGHT MODE — disable browser/system dark mode */
-html {
-    color-scheme: light !important;
-}
-
-/* Override Bootstrap + Browser auto-dark */
-:root,
-body,
-section,
-div,
-.service-item,
-.bg-icon {
-    background-color: #ffffff !important;
-    color: #000000 !important;
-}
-
-

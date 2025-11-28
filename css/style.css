@@ -59,6 +59,44 @@ html {
 .lang-floating-btn .lang-inactive {
     opacity: 0.4;
 }
+/* --- MOBILE NAVBAR FIX --- */
+@media (max-width: 991px) {
+
+  /* Reduce padding so navbar is fully visible */
+  .navbar {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  /* Remove extra padding in collapse menu */
+  .navbar .collapse {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* Prevent WOW animation from jumping */
+  .navbar.wow {
+    visibility: visible !important;
+    animation-name: none !important;
+  }
+}
+
+
+/* --- FIX FLOATING LANGUAGE BUTTON ON MOBILE --- */
+.lang-floating-btn {
+  position: fixed;
+  top: 80px;     /* moved below navbar */
+  right: 15px;
+  z-index: 9999;
+}
+
+@media (max-width: 575px) {
+  .lang-floating-btn {
+    top: 70px;   /* mobile height */
+    right: 10px;
+    transform: scale(0.95);
+  }
+}
 
 /*** Spinner ***/
 #spinner {

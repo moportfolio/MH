@@ -65,6 +65,19 @@ html {
     opacity: 0.4;
   }
 
+/* Disable dark-mode styling completely */
+@media (prefers-color-scheme: dark) {
+    body, .service-item, .bg-icon {
+        background: none !important;
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border-color: rgba(0,0,0,0.1) !important;
+    }
+
+    .service-item:hover {
+        background-color: #f7f7f7 !important;
+    }
+}
 
 
 /*** Spinner ***/
